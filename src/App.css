@@ -1,7 +1,4 @@
-/*@font-face {
-  font-family: 'Menrope-Bold';
-    src: url(../public/fonts/Menrope-Bold.ttf);
-}*/
+
 @font-face {
   font-family: "Manrope";
   src: url(../public/fonts/Manrope-Regular.ttf);
@@ -822,16 +819,7 @@ button.cta-start:hover {
   align-items: start;
 }
 
-.blog-card {
-  width: 100%;
-  font-size: 0;
-  display: flex;
-  flex-direction: column;
-  background: #042C54;
-  border-radius: 10px;
-  overflow: hidden;
-  /* Убрана анимация поднятия карточек */
-}
+
 
 .blog-card.main-card {
   grid-column: 1;
