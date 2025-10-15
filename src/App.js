@@ -33,7 +33,6 @@ function App() {
         </div>
       </div>
 
-      {/* Main Content */}
       <div className="main">
         {/* Welcome Section */}
         <section className="welcome">
