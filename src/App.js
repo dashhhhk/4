@@ -1,40 +1,19 @@
 import React from 'react';
 import './App.css';
+import MobileMenu from './components/MobileMenu';
 
 function App() {
   return (
     <div className="App">
-      {/* Header */}
+      {/* Header с JS логикой */}
       <div className="header">
         <div className="container">
           <img src="/images/GPT-4.svg" alt="GPT-4 Logo" className="header-logo"/>
-          <nav className="nav-header">
-            <ul className="header-list">
-              <li><a href="#">Главная</a></li>
-              <li><a href="#">Что такое GPT?</a></li>
-              <li><a href="#">Open AI</a></li>
-              <li><a href="#">Кейсы</a></li>
-              <li><a href="#">Библиотека</a></li>
-            </ul>
-            <div className="btn desktop-buttons">
-              <button className="btn-sign">Войти</button>
-              <button className="btn-sign-primary">Регистрация</button>
-            </div>
-            <div className="mobile-buttons">
-              <button className="btn-sign">Войти</button>
-              <button className="btn-sign-primary">Регистрация</button>
-            </div>
-          </nav>
-          <div className="nav-button" id="navToggle">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+          <MobileMenu />
         </div>
       </div>
 
       <div className="main">
-        {/* Welcome Section */}
         <section className="welcome">
           <div className="container">
             <div className="welcome1">
@@ -54,7 +33,7 @@ function App() {
                 </div>
               </div>    
               <div className="welcome-image">
-                <img src="/images/Header Illustration.png" alt="Welcome Illustration"/>
+                <img src="/images/Header Illustration.svg" alt="Welcome Illustration"/>
               </div>
             </div>
             <div className="welcome-web">
@@ -66,8 +45,6 @@ function App() {
             </div>
           </div>
         </section>
-
-        {/* GPT Section */}
         <section className="GPT">
           <div className="container">
             <div className="text-overlow">
@@ -104,8 +81,6 @@ function App() {
             </div>
           </div>
         </section>
-
-        {/* Future Section */}
         <section className="future-is-now">
           <div className="container">
             <div className="future-grid">
@@ -154,12 +129,10 @@ function App() {
             </div>
           </div>
         </section>
-
-        {/* My Apps Section */}
         <section className="my-apps">
           <div className="container">
             <div className="my-apps-image">
-              <img src="/images/Feature Image.png" alt="Feature"/>
+              <img src="/images/Feature.svg" alt="Feature"/>
             </div>
             <div className="my-apps-wrapper">
               <h1 className="my-apps-text-1">Запросить ранний доступ</h1>
@@ -169,8 +142,6 @@ function App() {
             </div>
           </div>
         </section>
-
-        {/* CTA Section */}
         <section className="CTA">
           <div className="container">
             <div className="cta-background">
@@ -182,8 +153,6 @@ function App() {
             </div>
           </div>
         </section>
-
-        {/* Blog Section */}
         <section className="blog">
           <div className="container">
             <div className="blog-header">
@@ -247,8 +216,6 @@ function App() {
             </div>
           </div>
         </section>
-
-        {/* Future Footer Section */}
         <section className="section-future">
           <div className="container">
             <div className="section-future-content">
@@ -291,7 +258,6 @@ function App() {
         </section>
       </div>
 
-      {/* Footer */}
       <footer>
         <p className="footer-text">© 2023 GPT-3. Все права защищены.</p>
       </footer>
